@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: bold;
+            font-size: 40px;
+            text-align: center; color: pink;}
+       img{ border-radius: 40%;}
+       body{background-color: green;}
+       nav{
+        background-color: aqua;
+        display: flex; justify-content: space-between; padding: 15px;}
+         ul{
+          padding: 40px;}
+         ul li{
+            display: inline;
+            padding: 15px;}
+         a{
+            text-decoration: none;
+            color: brown;
+            font-size: 25px;
+            font-weight: bold;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+         nav ul li a:hover{
+           background-color: turquoise;}
+         nav ul li a:active{
+            background-color: blue;}
+            .photo{
+                height: 250px;
+                width: 300px;
+                margin-top: 40px;
+                border-color: red;
+                animation-name: photo;
+                animation-duration: 10s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+                animation-direction: normal;
+                position: relative;
+                transition: height 3s width 3s;}
+                .photo:hover{
+                    height: 260px; width: 310px;
+                } 
+            @keyframes photo{
+                0%{
+                    right: 0;
+                    left: 800px;
+                }
+                100%{
+                    left: 0;
+                    right: 800px;
+                }
+            }
+
+    </style>
+
+</head>
+<body>
+    <h1>Welcome To Photo Studio</h1>
+    <nav>
+        <img src="photos/img9.jpg"><img>
+    <ul>
+        <li>
+        <a href="page24.html">Home Page</a>
+        </li>
+        <li>
+            <a href="page29.html">About Page</a>
+        </li>
+        <li>
+            <a href="page30.html">Conatct</a>
+        </li>
+        <li>
+            <a href="page31.html">Privacy Policy</a>
+        </li>
+    </ul>
+
+    </nav>
+    
+    <img class="photo" src="photos/angele-kamp-IWzloaVyoOw-unsplash.jpg"></img>
+</body>
+</html>
